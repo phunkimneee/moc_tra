@@ -1,0 +1,19 @@
+Options -Indexes
+
+# Block direct access to sensitive files
+<FilesMatch "^(\.env|composer\.json|composer\.lock)$">
+    Require all denied
+</FilesMatch>
+
+RewriteEngine On
+RewriteBase /moctra/
+
+# === 1. Redirect 301: /moctra/page.php → /moctra/page ===
+# Chỉ áp dụng root-level (không match admin/, api/, subdirectories)
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /moctra/([a-z][a-z0-9_]*)\.php[\ ?] [NC]
+RewriteRule ^ /moctra/%1 [R=301,L]
+
+# === 2. Internal rewrite: /moctra/page → /moctra/page.php ===
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([a-z][a-z0-9_]*)/?$ $1.php [L]
