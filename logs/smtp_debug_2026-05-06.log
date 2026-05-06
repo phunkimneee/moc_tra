@@ -1,0 +1,264 @@
+[04:40:17] → Connecting to tcp://smtp.getresponse.com:587
+[04:40:21] ✗ Connect FAILED (10061): No connection could be made because the target machine actively refused it
+[04:40:38] → Connecting to tcp://smtp.getresponse.com:587
+[04:40:41] ✗ Connect FAILED (10061): No connection could be made because the target machine actively refused it
+[05:25:31] SMTP ERROR: Failed to connect to server: No connection could be made because the target machine actively refused it (10061)
+[05:25:31] SMTP Error: Could not connect to SMTP host. Failed to connect to server
+[05:25:31] ✗ ERROR: SMTP Error: Could not connect to SMTP host. Failed to connect to server | Mailer: SMTP Error: Could not connect to SMTP host. Failed to connect to server SMTP server error: Failed to connect to server SMTP code: 10061 Additional SMTP info: No connection could be made because the target machine actively refused it
+[05:25:54] SMTP ERROR: Failed to connect to server: No connection could be made because the target machine actively refused it (10061)
+[05:25:54] SMTP Error: Could not connect to SMTP host. Failed to connect to server
+[05:25:54] ✗ ERROR: SMTP Error: Could not connect to SMTP host. Failed to connect to server | Mailer: SMTP Error: Could not connect to SMTP host. Failed to connect to server SMTP server error: Failed to connect to server SMTP code: 10061 Additional SMTP info: No connection could be made because the target machine actively refused it
+[05:27:01] SMTP ERROR: Failed to connect to server: No connection could be made because the target machine actively refused it (10061)
+[05:27:01] SMTP Error: Could not connect to SMTP host. Failed to connect to server
+[05:27:01] ✗ ERROR: SMTP Error: Could not connect to SMTP host. Failed to connect to server | Mailer: SMTP Error: Could not connect to SMTP host. Failed to connect to server SMTP server error: Failed to connect to server SMTP code: 10061 Additional SMTP info: No connection could be made because the target machine actively refused it
+[05:27:03] SMTP ERROR: Failed to connect to server: No connection could be made because the target machine actively refused it (10061)
+[05:27:03] SMTP Error: Could not connect to SMTP host. Failed to connect to server
+[05:27:03] ✗ ERROR: SMTP Error: Could not connect to SMTP host. Failed to connect to server | Mailer: SMTP Error: Could not connect to SMTP host. Failed to connect to server SMTP server error: Failed to connect to server SMTP code: 10061 Additional SMTP info: No connection could be made because the target machine actively refused it
+[06:05:28] → POST Brevo /v3/smtp/email to pn0503982@gmail.com
+[06:05:29] ← HTTP 401: {"message":"We have detected you are using an unrecognised IP address 2405:4802:8019:b800:94ef:dc88:3026:f575. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+[06:05:29] ✗ SEND FAILED (HTTP 401)
+[06:15:45] SERVER -> CLIENT: 220 smtp-relay.brevo.com ESMTP Service Ready
+[06:15:45] CLIENT -> SERVER: EHLO localhost
+[06:15:45] SERVER -> CLIENT: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-STARTTLS
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 SIZE 20971520
+[06:15:45] CLIENT -> SERVER: STARTTLS
+[06:15:45] SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+[06:15:45] CLIENT -> SERVER: EHLO localhost
+[06:15:46] SERVER -> CLIENT: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 SIZE 20971520
+[06:15:46] CLIENT -> SERVER: AUTH LOGIN
+[06:15:46] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+[06:15:46] CLIENT -> SERVER: [credentials hidden]
+[06:15:46] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+[06:15:46] CLIENT -> SERVER: [credentials hidden]
+[06:15:46] SERVER -> CLIENT: 535 5.7.8 Authentication failed
+[06:15:46] SMTP ERROR: Password command failed: 535 5.7.8 Authentication failed
+[06:15:46] SMTP Error: Could not authenticate.
+[06:15:46] CLIENT -> SERVER: QUIT
+[06:15:46] SERVER -> CLIENT: 221 2.0.0 Bye
+[06:15:46] SMTP Error: Could not authenticate.
+[06:15:46] ✗ SMTP ERROR: SMTP Error: Could not authenticate. | SMTP Error: Could not authenticate.
+[06:15:46] → Fallback: POST Brevo HTTP API to pn0503982@gmail.com
+[06:15:47] ← HTTP 401: {"message":"We have detected you are using an unrecognised IP address 2405:4802:8019:b800:94ef:dc88:3026:f575. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+[06:15:47] ✗ HTTP API SEND FAILED (HTTP 401)
+[06:15:50] SERVER -> CLIENT: 220 smtp-relay.brevo.com ESMTP Service Ready
+[06:15:50] CLIENT -> SERVER: EHLO localhost
+[06:15:50] SERVER -> CLIENT: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-STARTTLS
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 SIZE 20971520
+[06:15:50] CLIENT -> SERVER: STARTTLS
+[06:15:50] SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+[06:15:51] CLIENT -> SERVER: EHLO localhost
+[06:15:51] SERVER -> CLIENT: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 SIZE 20971520
+[06:15:51] CLIENT -> SERVER: AUTH LOGIN
+[06:15:51] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+[06:15:51] CLIENT -> SERVER: [credentials hidden]
+[06:15:51] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+[06:15:51] CLIENT -> SERVER: [credentials hidden]
+[06:15:51] SERVER -> CLIENT: 535 5.7.8 Authentication failed
+[06:15:51] SMTP ERROR: Password command failed: 535 5.7.8 Authentication failed
+[06:15:51] SMTP Error: Could not authenticate.
+[06:15:51] CLIENT -> SERVER: QUIT
+[06:15:51] SERVER -> CLIENT: 221 2.0.0 Bye
+[06:15:51] SMTP Error: Could not authenticate.
+[06:15:51] ✗ SMTP ERROR: SMTP Error: Could not authenticate. | SMTP Error: Could not authenticate.
+[06:15:51] → Fallback: POST Brevo HTTP API to pn0503982@gmail.com
+[06:15:52] ← HTTP 401: {"message":"We have detected you are using an unrecognised IP address 2405:4802:8019:b800:94ef:dc88:3026:f575. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+[06:15:52] ✗ HTTP API SEND FAILED (HTTP 401)
+[06:15:52] SERVER -> CLIENT: 220 smtp-relay.brevo.com ESMTP Service Ready
+[06:15:52] CLIENT -> SERVER: EHLO localhost
+[06:15:52] SERVER -> CLIENT: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-STARTTLS
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 SIZE 20971520
+[06:15:52] CLIENT -> SERVER: STARTTLS
+[06:15:53] SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+[06:15:53] CLIENT -> SERVER: EHLO localhost
+[06:15:53] SERVER -> CLIENT: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 SIZE 20971520
+[06:15:53] CLIENT -> SERVER: AUTH LOGIN
+[06:15:53] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+[06:15:53] CLIENT -> SERVER: [credentials hidden]
+[06:15:53] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+[06:15:53] CLIENT -> SERVER: [credentials hidden]
+[06:15:54] SERVER -> CLIENT: 535 5.7.8 Authentication failed
+[06:15:54] SMTP ERROR: Password command failed: 535 5.7.8 Authentication failed
+[06:15:54] SMTP Error: Could not authenticate.
+[06:15:54] CLIENT -> SERVER: QUIT
+[06:15:54] SERVER -> CLIENT: 221 2.0.0 Bye
+[06:15:54] SMTP Error: Could not authenticate.
+[06:15:54] ✗ SMTP ERROR: SMTP Error: Could not authenticate. | SMTP Error: Could not authenticate.
+[06:15:54] → Fallback: POST Brevo HTTP API to pn0503982@gmail.com
+[06:15:55] ← HTTP 401: {"message":"We have detected you are using an unrecognised IP address 2405:4802:8019:b800:94ef:dc88:3026:f575. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+[06:15:55] ✗ HTTP API SEND FAILED (HTTP 401)
+[06:15:55] SERVER -> CLIENT: 220 smtp-relay.brevo.com ESMTP Service Ready
+[06:15:55] CLIENT -> SERVER: EHLO localhost
+[06:15:55] SERVER -> CLIENT: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-STARTTLS
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 SIZE 20971520
+[06:15:55] CLIENT -> SERVER: STARTTLS
+[06:15:55] SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+[06:15:55] CLIENT -> SERVER: EHLO localhost
+[06:15:56] SERVER -> CLIENT: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 SIZE 20971520
+[06:15:56] CLIENT -> SERVER: AUTH LOGIN
+[06:15:56] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+[06:15:56] CLIENT -> SERVER: [credentials hidden]
+[06:15:56] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+[06:15:56] CLIENT -> SERVER: [credentials hidden]
+[06:15:56] SERVER -> CLIENT: 535 5.7.8 Authentication failed
+[06:15:56] SMTP ERROR: Password command failed: 535 5.7.8 Authentication failed
+[06:15:56] SMTP Error: Could not authenticate.
+[06:15:56] CLIENT -> SERVER: QUIT
+[06:15:56] SERVER -> CLIENT: 221 2.0.0 Bye
+[06:15:56] SMTP Error: Could not authenticate.
+[06:15:56] ✗ SMTP ERROR: SMTP Error: Could not authenticate. | SMTP Error: Could not authenticate.
+[06:15:56] → Fallback: POST Brevo HTTP API to pn0503982@gmail.com
+[06:15:57] ← HTTP 401: {"message":"We have detected you are using an unrecognised IP address 2405:4802:8019:b800:94ef:dc88:3026:f575. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+[06:15:57] ✗ HTTP API SEND FAILED (HTTP 401)
+[06:15:57] SERVER -> CLIENT: 220 smtp-relay.brevo.com ESMTP Service Ready
+[06:15:57] CLIENT -> SERVER: EHLO localhost
+[06:15:57] SERVER -> CLIENT: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-STARTTLS
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 SIZE 20971520
+[06:15:57] CLIENT -> SERVER: STARTTLS
+[06:15:57] SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+[06:15:58] CLIENT -> SERVER: EHLO localhost
+[06:15:58] SERVER -> CLIENT: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 SIZE 20971520
+[06:15:58] CLIENT -> SERVER: AUTH LOGIN
+[06:15:58] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+[06:15:58] CLIENT -> SERVER: [credentials hidden]
+[06:15:58] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+[06:15:58] CLIENT -> SERVER: [credentials hidden]
+[06:15:59] SERVER -> CLIENT: 535 5.7.8 Authentication failed
+[06:15:59] SMTP ERROR: Password command failed: 535 5.7.8 Authentication failed
+[06:15:59] SMTP Error: Could not authenticate.
+[06:15:59] CLIENT -> SERVER: QUIT
+[06:15:59] SERVER -> CLIENT: 221 2.0.0 Bye
+[06:15:59] SMTP Error: Could not authenticate.
+[06:15:59] ✗ SMTP ERROR: SMTP Error: Could not authenticate. | SMTP Error: Could not authenticate.
+[06:15:59] → Fallback: POST Brevo HTTP API to pn0503982@gmail.com
+[06:15:59] ← HTTP 401: {"message":"We have detected you are using an unrecognised IP address 2405:4802:8019:b800:94ef:dc88:3026:f575. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+[06:15:59] ✗ HTTP API SEND FAILED (HTTP 401)
+[06:16:00] SERVER -> CLIENT: 220 smtp-relay.brevo.com ESMTP Service Ready
+[06:16:00] CLIENT -> SERVER: EHLO localhost
+[06:16:00] SERVER -> CLIENT: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-STARTTLS
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 SIZE 20971520
+[06:16:00] CLIENT -> SERVER: STARTTLS
+[06:16:00] SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+[06:16:00] CLIENT -> SERVER: EHLO localhost
+[06:16:00] SERVER -> CLIENT: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-AUTH PLAIN LOGIN CRAM-MD5
+250 SIZE 20971520
+[06:16:00] CLIENT -> SERVER: AUTH LOGIN
+[06:16:00] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+[06:16:00] CLIENT -> SERVER: [credentials hidden]
+[06:16:01] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+[06:16:01] CLIENT -> SERVER: [credentials hidden]
+[06:16:01] SERVER -> CLIENT: 535 5.7.8 Authentication failed
+[06:16:01] SMTP ERROR: Password command failed: 535 5.7.8 Authentication failed
+[06:16:01] SMTP Error: Could not authenticate.
+[06:16:01] CLIENT -> SERVER: QUIT
+[06:16:01] SERVER -> CLIENT: 221 2.0.0 Bye
+[06:16:01] SMTP Error: Could not authenticate.
+[06:16:01] ✗ SMTP ERROR: SMTP Error: Could not authenticate. | SMTP Error: Could not authenticate.
+[06:16:01] → Fallback: POST Brevo HTTP API to pn0503982@gmail.com
+[06:16:02] ← HTTP 401: {"message":"We have detected you are using an unrecognised IP address 2405:4802:8019:b800:94ef:dc88:3026:f575. If you performed this action make sure to add the new IP address in this link: https://app.brevo.com/security/authorised_ips","code":"unauthorized"}
+[06:16:02] ✗ HTTP API SEND FAILED (HTTP 401)
+[06:18:23] SERVER -> CLIENT: 220 smtp-relay.brevo.com ESMTP Service Ready
+[06:18:23] CLIENT -> SERVER: EHLO localhost
+[06:18:24] SERVER -> CLIENT: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-STARTTLS
+250-AUTH CRAM-MD5 PLAIN LOGIN
+250 SIZE 20971520
+[06:18:24] CLIENT -> SERVER: STARTTLS
+[06:18:24] SERVER -> CLIENT: 220 2.0.0 Ready to start TLS
+[06:18:24] CLIENT -> SERVER: EHLO localhost
+[06:18:24] SERVER -> CLIENT: 250-Hello localhost
+250-PIPELINING
+250-8BITMIME
+250-ENHANCEDSTATUSCODES
+250-CHUNKING
+250-AUTH LOGIN CRAM-MD5 PLAIN
+250 SIZE 20971520
+[06:18:24] CLIENT -> SERVER: AUTH LOGIN
+[06:18:24] SERVER -> CLIENT: 334 VXNlcm5hbWU6
+[06:18:24] CLIENT -> SERVER: [credentials hidden]
+[06:18:24] SERVER -> CLIENT: 334 UGFzc3dvcmQ6
+[06:18:24] CLIENT -> SERVER: [credentials hidden]
+[06:18:25] SERVER -> CLIENT: 535 5.7.8 Authentication failed
+[06:18:25] SMTP ERROR: Password command failed: 535 5.7.8 Authentication failed
+[06:18:25] SMTP Error: Could not authenticate.
+[06:18:25] CLIENT -> SERVER: QUIT
+[06:18:25] SERVER -> CLIENT: 221 2.0.0 Bye
+[06:18:25] SMTP Error: Could not authenticate.
+[06:18:25] ✗ SMTP ERROR: SMTP Error: Could not authenticate. | SMTP Error: Could not authenticate.
+[06:18:25] → Fallback: POST Brevo HTTP API to pn0503982@gmail.com
+[06:18:25] ← HTTP 201: {"messageId":"<202605060418.99990546429@smtp-relay.mailin.fr>"}
+[06:18:25] ✓ HTTP API SEND SUCCESS to pn0503982@gmail.com
